@@ -1,0 +1,42 @@
+az aks get-credentials --resource-group eastus --name testaks --admin
+
+Practice command:
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/#viewing-finding-resources
+https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552
+
+
+kubectl get namespace
+kube-system  
+namespace 
+node 
+
+#run the kubectl in kubes-system namespace
+
+kubect get $apiResource -n kube-system
+
+#eg
+kubectl -n kube-system get pod
+kubectl -n kube-system get deployment 
+kubectl -n kube-system get service 
+kubectl -n kube-system get secret 
+kubectl -n kube-system get configmap 
+kubectl -n kube-system get persistentvolume 
+
+
+
+pod:
+deployment:
+service:
+
+################
+secret:
+configmap:
+storageclass:
+persistentvolume:
+persistentvolumeclaim:
+ingress:
+role:
+rolebinding:
+clusterrole:
+clusterrolebinding:
+
